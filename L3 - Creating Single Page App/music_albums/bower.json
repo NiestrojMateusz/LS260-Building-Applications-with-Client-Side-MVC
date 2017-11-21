@@ -1,0 +1,22 @@
+{
+  "name": "music_albums",
+  "description": "Music collection application",
+  "main": "app.js",
+  "authors": [
+    "Mateusz Niestrój <niestroj.mateusz@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/NiestrojMateusz/LS260-Building-Applications-with-Client-Side-MVC",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "backbone": "^1.3.3"
+  }
+}
