@@ -7,13 +7,30 @@
   <script src="javascripts/lib/jasmine-2.8.0/jasmine-html.js"></script>
   <script src="javascripts/lib/jasmine-2.8.0/boot.js"></script>
   <script src="/javascripts/vendor/all.js"></script>
+  <style>#albums {display: none;}</style>
   <title>Document</title>
 </head>
 <body>
+  <ul id="albums">
 
+  </ul>
+  <script data-name="albums" type="text/x-handlebars">
+    {{#each albums}}
+      <li>
+        <a href="{{tracks_url}}">
+          <img src="{{cover}}" alt="">
+          <h2>{{title}}</h2>
+          <h3>{{artist}}</h3>
+          <p>Released: {{date}}</p>
+        </a>
+      </li>
+    {{/each}}
+  </script>
   <script src="/javascripts/models/album.js"></script>
   <script src="/javascripts/collections/albums.js"></script>
+  <script src="/javascripts/views/albums.js"></script>
   <script src="/javascripts/app.js"></script>
   <script src="javascripts/spec/albums_spec.js"></script>
+  <script src="javascripts/spec/albums_view_spec.js"></script>
 </body>
 </html>
